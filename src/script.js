@@ -14,7 +14,7 @@ function shuffleCards() {
 function initializeGame() {
     cards.forEach(card => {
         card.classList.remove('flipped', 'bg-white', 'text-gray-800', 'matched');
-        card.classList.add('bg-green-700', 'text-white');
+        card.classList.add('bg-green-500', 'text-white');
         card.textContent = ''; // Hide the card name
         card.addEventListener('click', flipCard);
     });
@@ -24,7 +24,7 @@ function flipCard() {
     if (lockBoard || this === firstCard) return;
 
     this.classList.add('flipped', 'bg-white', 'text-gray-800');
-    this.classList.remove('bg-green-700', 'text-white');
+    this.classList.remove('bg-green-500', 'text-white');
     this.textContent = this.getAttribute('data-name');
     if (!firstCard) {
         firstCard = this;
@@ -38,8 +38,8 @@ function checkForMatch() {
     isMatch ? markAsMatched() : unflipCards();
 }
 function markAsMatched() {
-    firstCard.classList.add('matched', 'bg-red-500', 'text-black');
-    secondCard.classList.add('matched', 'bg-red-500', 'text-black');
+    firstCard.classList.add('matched', 'bg-red-300', 'text-black');
+    secondCard.classList.add('matched', 'bg-red-300', 'text-black');
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     resetBoardState();
@@ -49,8 +49,8 @@ function unflipCards() {
     setTimeout(() => {
         firstCard.classList.remove('flipped', 'bg-white', 'text-gray-800');
         secondCard.classList.remove('flipped', 'bg-white', 'text-gray-800');
-        firstCard.classList.add('bg-green-700', 'text-white');
-        secondCard.classList.add('bg-green-700', 'text-white');
+        firstCard.classList.add('bg-green-500', 'text-white');
+        secondCard.classList.add('bg-green-500', 'text-white');
         firstCard.textContent = '';
         secondCard.textContent = '';
         resetBoardState();
