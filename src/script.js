@@ -37,6 +37,7 @@ function checkForMatch() {
     const isMatch = firstCard.getAttribute('data-name') === secondCard.getAttribute('data-name');
     isMatch ? markAsMatched() : unflipCards();
 }
+// markAsMatched
 function markAsMatched() {
     firstCard.classList.add('matched', 'bg-red-300', 'text-black');
     secondCard.classList.add('matched', 'bg-red-300', 'text-black');
