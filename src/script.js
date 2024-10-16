@@ -13,7 +13,7 @@ function shuffleCards() {
 }
 function initializeGame() {
     cards.forEach(card => {
-        card.classList.remove('flipped', 'bg-white', 'text-gray-800', 'matched');
+        card.classList.remove('flipped', 'bg-white', 'text-gray-800', 'matched', 'bg-red-300', 'text-black');
         card.classList.add('bg-green-500', 'text-white');
         card.textContent = ''; // Hide the card name
         card.addEventListener('click', flipCard);
@@ -37,7 +37,7 @@ function checkForMatch() {
     const isMatch = firstCard.getAttribute('data-name') === secondCard.getAttribute('data-name');
     isMatch ? markAsMatched() : unflipCards();
 }
-// markAsMatched
+// markAsMatched 
 function markAsMatched() {
     firstCard.classList.add('matched', 'bg-red-300', 'text-black');
     secondCard.classList.add('matched', 'bg-red-300', 'text-black');
