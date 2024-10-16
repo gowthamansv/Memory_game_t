@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <header class="flex justify-between items-center w-full max-w-4xl px-4 mb-4">
+        <h1 class="text-2xl font-bold text-gray-700">Memory Game</h1>
+        <button id="restartButton" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            Restart Game
+        </button>
+    </header>
+    <div id="gameBoard" class="grid grid-cols-4 gap-4 w-full max-w-4xl px-4">
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="apple"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="banana"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="cherry"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="grape"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="orange"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="pear"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="lemon"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="peach"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="apple"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="banana"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="cherry"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="grape"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="orange"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="pear"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="lemon"></div>
+        <div class="card flex items-center justify-center h-24 bg-green-700 text-white rounded-lg cursor-pointer font-lora text-2xl" data-name="peach"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
